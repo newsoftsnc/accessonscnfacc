@@ -1,0 +1,19 @@
+{
+   	 "name": "newsoftsnc/accessonscnfacc",
+   	 "description": "Modulo per autenticazione tramite NsCnfAcc",
+   	 "keywords": ["yii2"],
+   	 "type": "yii2-extension",
+   	 "license": "GPL-3.0-or-later",
+   	 "authors": [{
+   	     	"name": "Newsoft s.n.c.",
+   		 "email": "info@newsoftonline.it",
+   		 "homepage": "http://www.newsoftonline.it"
+   	 }],
+   	 "autoload": {
+      		      "psr-4": {
+   	         	"newsoftsnc\\accessonscnfacc\\" : ""
+   			 }
+   		 },
+   	 "version": "1.0.0",
+   	 "minimum-stability": "dev"
+    }
