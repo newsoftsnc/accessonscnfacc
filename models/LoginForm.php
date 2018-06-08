@@ -84,6 +84,9 @@ class LoginForm extends Model {
             }
              
             if (!empty($this->database)) {
+                // Check eventuale LOG
+                $this->logUser();
+                
                 return Yii::$app->user->login($this->getUser(), $this->rememberMe ? 3600*24*30 : 0);
             }
             $this->setdatabase = true;
@@ -106,6 +109,23 @@ class LoginForm extends Model {
             $this->_user = User::findByUsername($this->clientname, $this->username, $this->database);
 //        }
         return $this->_user;
+    }
+ 
+    /**
+     * Log dell'accesso dell'utente
+     *
+     * @return null
+     */
+    public function logUser() {
+        if (Yii::$app->getModule('gestacc')->getLog()) {
+            $d = date("d-m-Y");
+            $o = date("H:i");
+            $a = date("Y-m-d")." ".date("H:i");
+            
+            
+            
+        }
+        return null;
     }
     
 }

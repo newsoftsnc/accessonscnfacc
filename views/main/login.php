@@ -2,8 +2,6 @@
 
 use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
-use newsoftsnc\accessonscnfacc\models\Enable;
-use newsoftsnc\accessofixeduser\Gestacc;
 
 print_r(Yii::$app->user->identity);
 

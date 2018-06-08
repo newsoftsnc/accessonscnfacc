@@ -8,8 +8,8 @@ use yii\web\Controller;
 use yii\web\Response;
 use yii\filters\VerbFilter;
 use app\models\ContactForm;
-use newsoftsnc\accessonscnfacc\models\LoginForm;
 use newsoftsnc\accessonscnfacc\models\Enable;
+use newsoftsnc\accessonscnfacc\models\LoginForm;
 
 class MainController extends Controller {
     /**
